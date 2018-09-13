@@ -56,3 +56,4 @@ select pid, cid as city, company_id as company, position, field, salary_min, sal
 from (select * from lagou_city where district is not null) p
   join lagou_city c on c.city like concat(p.city, '%') and c.district like concat(p.district, '%');
 ```
+我建议使用第二种方法。
