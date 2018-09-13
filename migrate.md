@@ -57,3 +57,4 @@ from (select * from lagou_city where district is not null) p
   join lagou_city c on c.city like concat(p.city, '%') and c.district like concat(p.district, '%');
 ```
 我建议使用第二种方法。
+我们当做一个任务时，不要急着写代码，先要理清自己的思路，才能都够更好的完成任务。
